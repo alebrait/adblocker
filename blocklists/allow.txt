@@ -1,0 +1,1 @@
+# One domain per line. Exceptions also allow subdomains.

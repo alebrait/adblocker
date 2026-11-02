@@ -1,0 +1,4 @@
+# Starter examples; allowlist domains if a site breaks.
+google-analytics.com
+hotjar.com
+clarity.ms

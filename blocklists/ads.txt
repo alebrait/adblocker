@@ -1,0 +1,3 @@
+# Starter examples, not a comprehensive blocklist.
+doubleclick.net
+googlesyndication.com

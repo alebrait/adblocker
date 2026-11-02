@@ -1,0 +1,17 @@
+[Unit]
+Description=Personal DNS ad and tracker blocker
+
+[Service]
+Type=simple
+WorkingDirectory=%h/Proj/adblocker
+ExecStart=%h/Proj/adblocker/personal-blocker run --listen=127.0.0.1:5533 --blocklists=blocklists/ads.txt,blocklists/trackers.txt,blocklists/hagezi-light.txt --query-log=false
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=on-failure
+RestartSec=2
+TimeoutStopSec=10
+NoNewPrivileges=true
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+UMask=0077
+
+[Install]
+WantedBy=default.target
