@@ -34,3 +34,6 @@ coverage.out
 
 # Go workspace file
 go.work
+
+# Local coding-agent instructions
+/AGENTS.md
